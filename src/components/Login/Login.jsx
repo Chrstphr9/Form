@@ -1,29 +1,16 @@
 import React from 'react'
 import './Login.css'
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import Box from '@mui/material/Box';
+import Modal from '../../Modal';
+
 
 const Login = () => {
+  const [ openModal, setOpenModal ] = useState(false)
 
-    const style = {
-        // position: 'absolute',
-        // top: '50%',
-        // left: '50%',
-        // transform: 'translate(-50%, -50%)',
-        // width: 400,
-        // bgcolor: 'red',
-        // border: '2px solid #000',
-        // boxShadow: 24,
-        // p: 4,
-      };
-
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+  
   return (
     
     <section className="login">
@@ -48,22 +35,9 @@ const Login = () => {
         // value={password}
         // onChange={(e) => setPassword(e.target.value)}
       />
-     <button onClick={handleOpen} className='pass'>Open modal</button>
-     <Modal className='modal'
-  open={open}
-  onClose={handleClose}
-  aria-labelledby="modal-modal-title"
-  aria-describedby="modal-modal-description"
->
-  <Box sx={style}>
-    <Typography id="modal-modal-title" variant="h6" component="h2">
-      Text in a modal
-    </Typography>
-    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-      Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-    </Typography>
-  </Box>
-</Modal>
+    <p className='pass'>forgot password</p>
+    <Modal />
+    
       {/* <p className="errorMsg">{passwordError}</p> */}
       <div className="btn"> 
         { (
