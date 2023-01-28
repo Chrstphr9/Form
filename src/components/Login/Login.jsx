@@ -8,7 +8,7 @@ import Modal from '../../Modal';
 
 
 const Login = () => {
-  const [ openModal, setOpenModal ] = useState(false)
+  const [ openModal, setOpenModal ] = useState(true)
 
   
   return (
