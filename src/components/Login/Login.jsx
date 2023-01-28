@@ -7,15 +7,16 @@ import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOu
 import Modal from '../../Modal';
 
 
-const Login = () => {
+const Login = ({onClose}) => {
   const [ openModal, setOpenModal ] = useState(true)
 
   
   return (
     
     <section className="login">
+    <div onClick={onClose} className="overlay">
     <div className="loginContainer">
-        <h1>Hello</h1>
+    <h1>Hello</h1>
         <p className='intro'>Sign Into Your Account</p>
       <label>Email</label>
       <input
@@ -82,6 +83,7 @@ const Login = () => {
               Don't Have An Account ?
               <Link to="/Signup">Sign Up Here</Link>
             </p>
+    </div>
     </div>
   </section>
   )

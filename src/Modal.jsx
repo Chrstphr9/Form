@@ -1,10 +1,11 @@
 import React from 'react'
 
+
 const Modal = ({ open, onClose }) => {
     if (!open) return null
   return (
     <div>
-        <div className="overlay">
+        <div onClick={onClose} className="overlay">
             <div className="modalContainer">
             <div className="modalRight">
                 <p onClick={onClose} className="closeBtn">X</p>
