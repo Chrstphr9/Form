@@ -4,7 +4,6 @@ import React from 'react'
 const Modal = ({ open, onClose }) => {
     if (!open) return null
   return (
-    <div>
         <div onClick={onClose} className="overlay">
             <div className="modalContainer">
             <div className="modalRight">
@@ -15,7 +14,6 @@ const Modal = ({ open, onClose }) => {
             </div>
             </div>
         </div>
-    </div>
   )
 }
 

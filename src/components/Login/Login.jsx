@@ -14,7 +14,7 @@ const Login = ({onClose}) => {
   return (
     
     <section className="login">
-    <div onClick={onClose} className="overlay">
+    
     <div className="loginContainer">
     <h1>Hello</h1>
         <p className='intro'>Sign Into Your Account</p>
@@ -84,7 +84,7 @@ const Login = ({onClose}) => {
               <Link to="/Signup">Sign Up Here</Link>
             </p>
     </div>
-    </div>
+    
   </section>
   )
 }
