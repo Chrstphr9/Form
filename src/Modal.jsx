@@ -6,7 +6,12 @@ const Modal = ({open}) => {
     <div>
         <div className="overlay">
             <div className="modalContainer">
-                
+            <div className="modalRight">
+                <p className="closeBtn">X</p>
+                <div className="content">
+                    <p>Rest Passwoed Has Been Sent To Your Email</p>
+                </div>
+            </div>
             </div>
         </div>
     </div>

@@ -35,7 +35,7 @@ const Login = () => {
         // value={password}
         // onChange={(e) => setPassword(e.target.value)}
       />
-    <p className='pass'>forgot password</p>
+    <a className='pass'href="" onClick= {() => setOpenModal(true)}>Forgot Password</a>
     <Modal open={openModal }/>
     
       {/* <p className="errorMsg">{passwordError}</p> */}
